@@ -37,4 +37,6 @@ color: black;
   width: 90%;
   justify-content: space-between;
   margin: 0 auto;
+} .smurf-list a {
+  text-decoration: none;
 }

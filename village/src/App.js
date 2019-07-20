@@ -43,6 +43,7 @@ reloadSmurfs = (newSmurfs) => {
         </div>
         <Route exact path = '/' render = {(props) => <Smurfs {...props} smurfs= {this.state.smurfs} />} />
         <Route path = '/smurf-form' render = {(props) => <SmurfForm {...props} reloadSmurfs = {this.reloadSmurfs} />} />
+        <Route path = "/smurfs/:smurfID" render = {(props) => <Smurf {...props} smurfList = {this.state.smurfs}/>} />
       </div>
     );
   }

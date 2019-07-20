@@ -24,6 +24,19 @@ class SmurfForm extends Component {
     .catch(error => 
       console.log(error));
      
+  //     axios
+  //       .delete('http://localhost:3333/smurfs', {
+  //         name: String(this.state.name),
+  //         age: Number(this.state.age),
+  //         height: String(this.state.height)
+        
+  //       .then(response => {
+  //       })
+  //       .catch(error => {
+  //         console.log(error);
+  //   });
+  //   this.setState({ smurfs: response.data}); 
+  // };
 
     this.setState({
       name: '',
