@@ -37,12 +37,12 @@ reloadSmurfs = (newSmurfs) => {
   render() {
     return (
       <div className="App">
-        <SmurfForm reloadSmurfs={this.reloadSmurfs} />
-        <Smurfs smurfs={this.state.smurfs} />
-
+        <div className= "nav-bar">
+        <NavLink to ='/smurf-form'> Add Smurfs to List</NavLink>
+        <NavLink to = '/'>Smurfs</NavLink>
+        </div>
+        <Route exact path = '/' render = {(props) => <Smurfs {...props} smurfs= {this.state.smurfs} />} />
         <Route path = '/smurf-form' render = {(props) => <SmurfForm {...props} reloadSmurfs = {this.reloadSmurfs} />} />
-        <Route path = "/smurfs/:smurfID" render = {(props) => <Smurf {...props} smurfList = {this.state.smurfs}/>} />
-
       </div>
     );
   }

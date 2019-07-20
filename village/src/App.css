@@ -1,3 +1,40 @@
 .App {
   text-align: center;
 }
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: dodgerblue;
+  padding: 10px;
+  margin: 10px;
+}
+
+.Smurfs {
+  color: dodgerblue;
+}
+
+.Smurf {
+  border-radius: 10px;
+  padding: 4px;
+  border: 3px solid dodgerblue;
+  margin: 8px;
+  background-color: cornsilk;
+}
+
+.Smurf strong {
+color: black;
+} p {
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.smurf-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
